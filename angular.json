@@ -28,6 +28,11 @@
                 "glob": "**/*",
                 "input":"./src/assets",
                 "output": "/assets/"
+              },
+              {
+                "glob": "bootstrap-icons.svg",
+                "input": "./node_modules/bootstrap-icons/",
+                "output": "/"
               }
             ],
             "styles": [

@@ -1,6 +1,7 @@
+
 <h5 class="card-title-header">UPDATES</h5>
 
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card p-3" style="max-width: 540px;">
     <div class="row g-0">
         <div>
             <h5 class="card-title-user">Hannah Flynn</h5>
@@ -12,9 +13,9 @@
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title">So Long, See You Tomorrow</h5>
+                <h5 class="card-title">{{title}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">By
-                    <a href="#" class="card-link">William Maxwell</a>
+                    <a href="#" class="card-link">{{author}}</a>
                 </h6>
                 <div class="btn-group">
                     <button class="btn btn-secondary btn-sm" type="button">
@@ -37,10 +38,7 @@
                         <li><a class="dropdown-item" href="#">Add New Shelf</a></li>
                     </ul>
                 </div>
-                <p class="card-text">On an Illinois farm in the 1920s, a man is murdered, and in the same moment the
-                    tenuous friendship between two lonely boys comes to an end. In telling their interconnected stories,
-                    American Book Award winner William Maxwell delivers a masterfully restrained and magically evocative
-                    meditation on the past.</p>
+                <p class="card-text">{{description}}</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
             <a href="#" class="link-primary">Like </a>
@@ -50,13 +48,14 @@
             <span data-reactid=".kjkn2vj5mq.2.0.$=1$Update_9242811041.0.2.0.0.$1"><span
                     data-reactid=".kjkn2vj5mq.2.0.$=1$Update_9242811041.0.2.0.0.$1.0"> · </span></span>
             <a href="#" class="link-primary">Preview Book</a>
-        </div>
-        <form class="gr-mediaBox__desc" method="post" action="/comment"
+            <form class="gr-mediaBox__desc" method="post" action="/comment"
             data-reactid=".kjkn2vj5mq.2.0.$=1$Update_9242811041.0.2.3.1"><input type="hidden" name="id"
                 value="4779045265" data-reactid=".kjkn2vj5mq.2.0.$=1$Update_9242811041.0.2.3.1.0"><input type="hidden"
                 name="type" value="ReadStatus" data-reactid=".kjkn2vj5mq.2.0.$=1$Update_9242811041.0.2.3.1.1"><textarea
                 class="gr-textarea gr-commentForm__textarea" name="comment[body_usertext]" rows="1"
                 placeholder="Write a comment…" aria-label="Write a comment…"
                 data-reactid=".kjkn2vj5mq.2.0.$=1$Update_9242811041.0.2.3.1.2"></textarea></form>
+        </div>
+        
     </div>
 </div>

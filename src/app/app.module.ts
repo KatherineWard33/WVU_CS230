@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { UpdateComponent } from './Body/update.component';
 import { FooterComponent } from './Footer/footer.component';
 import { TopbarComponent } from './Header/topbar.component';
+import { LayoutComponent } from './layout/layout.component';
 import { CurrentlyReadingComponent } from './LeftSidebar/currently-reading.component';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CurrentlyReadingComponent } from './LeftSidebar/currently-reading.compo
     TopbarComponent,
     FooterComponent,
     UpdateComponent,
-    CurrentlyReadingComponent
+    CurrentlyReadingComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule
