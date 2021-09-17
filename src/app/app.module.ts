@@ -7,6 +7,12 @@ import { FooterComponent } from './Footer/footer.component';
 import { TopbarComponent } from './Header/topbar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { CurrentlyReadingComponent } from './LeftSidebar/currently-reading.component';
+import { MyBooksComponent } from './Body/my-books.component';
+import { RecommendationsComponent } from './Body/recommendations.component';
+import { ChoiceAwardsComponent } from './Body/choice-awards.component';
+import { ListsComponent } from './Body/lists.component';
+import { ExploreComponent } from './Body/explore.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +21,16 @@ import { CurrentlyReadingComponent } from './LeftSidebar/currently-reading.compo
     FooterComponent,
     UpdateComponent,
     CurrentlyReadingComponent,
-    LayoutComponent
+    LayoutComponent,
+    MyBooksComponent,
+    RecommendationsComponent,
+    ChoiceAwardsComponent,
+    ListsComponent,
+    ExploreComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
