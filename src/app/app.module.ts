@@ -13,6 +13,7 @@ import { ChoiceAwardsComponent } from './Body/choice-awards.component';
 import { ListsComponent } from './Body/lists.component';
 import { ExploreComponent } from './Body/explore.component';
 import { AppRoutingModule } from './app-routing.module';
+import { UpdateFeedComponent } from './Body/update-feed.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     RecommendationsComponent,
     ChoiceAwardsComponent,
     ListsComponent,
-    ExploreComponent
+    ExploreComponent,
+    UpdateFeedComponent
   ],
   imports: [
     BrowserModule,
