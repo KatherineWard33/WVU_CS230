@@ -14,6 +14,8 @@ import { ListsComponent } from './Body/lists.component';
 import { ExploreComponent } from './Body/explore.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UpdateFeedComponent } from './Body/update-feed.component';
+import { HttpClientModule} from '@angular/common/http'
+import { UserInfoComponent } from './Header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,14 @@ import { UpdateFeedComponent } from './Body/update-feed.component';
     ChoiceAwardsComponent,
     ListsComponent,
     ExploreComponent,
-    UpdateFeedComponent
+    UpdateFeedComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
