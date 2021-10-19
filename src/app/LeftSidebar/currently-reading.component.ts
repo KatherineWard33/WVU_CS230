@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-currently-reading-card',
@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./currently-reading.component.css']
 })
 export class CurrentlyReadingComponent {
+  @Input()
+  title!: string;
+  @Input()
+  author!: string;
 }

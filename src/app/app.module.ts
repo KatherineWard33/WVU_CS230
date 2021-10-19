@@ -16,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { UpdateFeedComponent } from './Body/update-feed.component';
 import { HttpClientModule} from '@angular/common/http'
 import { UserInfoComponent } from './Header/user-info.component';
+import { CurrentlyReadingListComponent } from './LeftSidebar/currently-reading-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserInfoComponent } from './Header/user-info.component';
     ListsComponent,
     ExploreComponent,
     UpdateFeedComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    CurrentlyReadingListComponent
   ],
   imports: [
     BrowserModule,

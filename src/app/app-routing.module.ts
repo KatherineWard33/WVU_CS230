@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'recommendations', component: RecommendationsComponent },
   { path: 'choice-awards', component: ChoiceAwardsComponent },
   { path: 'explore', component: ExploreComponent },
-  { path: 'lists', component: ListsComponent }
+  { path: 'lists', component: ListsComponent },
+  { path: '',redirectTo: '/home',pathMatch:'full'}
 ];
 
 @NgModule({

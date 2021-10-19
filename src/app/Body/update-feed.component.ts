@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { mockUpdates } from './mock-updates';
 import { Update } from './update.model';
+import { UpdateService } from './update.service';
 
 @Component({
   selector: 'app-update-feed',
@@ -9,11 +9,16 @@ import { Update } from './update.model';
 export class UpdateFeedComponent {
   updates:Update[] = [];
 
-  constructor(){
-    for(var update of mockUpdates){
-        this.updates.push(new Update(update));
-    }
+  constructor(private updateService:UpdateService){
+    this.fetchUpdates();
   }
-
+private fetchUpdates(){
+  this.updateService.getUpdates().subscribe((data:Update[])=>{
+    
+    for (let item in data){
+      this.updates.push(data[item]);
+    }
+  })
+}
 }
 
