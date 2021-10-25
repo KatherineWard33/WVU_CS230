@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddUpdateComponent } from './Body/add-update.component';
 import { ChoiceAwardsComponent } from './Body/choice-awards.component';
 import { ExploreComponent } from './Body/explore.component';
 import { ListsComponent } from './Body/lists.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'choice-awards', component: ChoiceAwardsComponent },
   { path: 'explore', component: ExploreComponent },
   { path: 'lists', component: ListsComponent },
-  { path: '',redirectTo: '/home',pathMatch:'full'}
+  { path: '',redirectTo: '/home',pathMatch:'full'},
+  { path: 'add-update', component: AddUpdateComponent}
 ];
 
 @NgModule({

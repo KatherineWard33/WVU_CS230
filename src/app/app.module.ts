@@ -17,6 +17,8 @@ import { UpdateFeedComponent } from './Body/update-feed.component';
 import { HttpClientModule} from '@angular/common/http'
 import { UserInfoComponent } from './Header/user-info.component';
 import { CurrentlyReadingListComponent } from './LeftSidebar/currently-reading-list.component';
+import { AddUpdateComponent } from './Body/add-update.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,12 +35,14 @@ import { CurrentlyReadingListComponent } from './LeftSidebar/currently-reading-l
     ExploreComponent,
     UpdateFeedComponent,
     UserInfoComponent,
-    CurrentlyReadingListComponent
+    CurrentlyReadingListComponent,
+    AddUpdateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

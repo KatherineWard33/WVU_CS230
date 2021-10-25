@@ -14,4 +14,7 @@ constructor(private http: HttpClient){
 public getUpdates(){
     return this.http.get<Update []>(this.baseURL+this.endpoint);
 }
+public pushUpdates(data:Update){
+    return this.http.post(this.baseURL+this.endpoint,data);
+}
 }
