@@ -26,7 +26,7 @@
               "src/favicon.ico",
               {
                 "glob": "**/*",
-                "input":"./src/assets",
+                "input": "./src/assets",
                 "output": "/assets/"
               },
               {
@@ -109,6 +109,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "goodreads:build:production",
+            "firebaseProject": "goodreads-3d57f",
+            "firebaseHostingSite": "goodreads-3d57f"
           }
         }
       }

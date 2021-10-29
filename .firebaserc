@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "goodreads-3d57f": {
+      "hosting": {
+        "goodreads": [
+          "goodreads-3d57f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "goodreads-3d57f"
+  }
+}
