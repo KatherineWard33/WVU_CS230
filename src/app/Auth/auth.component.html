@@ -1,0 +1,12 @@
+<form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Username</span>
+    <input type="text" class="form-control" placeholder="Username" ngModel name = "username">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Password</span>
+    <input type="text" class="form-control" placeholder="Password"ngModel name = "password">
+  </div>
+  <button type="submit" class="btn btn-primary me-3" (click)="buttonClicked='Login'">Log in</button>
+  <button type="submit" class="btn btn-primary" (click)="buttonClicked='Signup'">Sign up</button>
+</form>
